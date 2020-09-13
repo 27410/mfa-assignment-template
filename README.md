@@ -1,5 +1,7 @@
 # Metabolic Flux Analysis - Assignment
 
+![Schematic](schematic.png)
+
 In `assignment.py`:
 
 1. Encode the network's stoichiometry as a stoichiometry matrix.
