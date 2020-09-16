@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Stoichiometric matrix",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest numpy",
       "run": "pytest assignment.py -k 'test_stoichiometry_matrix'",
       "input": "",
       "output": "",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Degrees of freedom",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest numpy",
       "run": "pytest assignment.py -k 'test_degrees_of_freedom'",
       "input": "",
       "output": "",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Calculate fluxes",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest numpy",
       "run": "pytest assignment.py -k 'test_mfa_calculation'",
       "input": "",
       "output": "",
