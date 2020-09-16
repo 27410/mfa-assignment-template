@@ -10,6 +10,9 @@ import numpy as np
 # Metabolic Flux Analysis
 
 # 1. Write down the stoichiometry matrix S for the model as a numpy array.
+# The order of the rows should correspond to A, B and C.
+# The order of the columns should correspond to v1-v6
+
 
 # replace [[]] with the stoichiometric matrix.
 S = np.array([[]])
@@ -33,10 +36,9 @@ def test_degrees_of_freedom():
 ###### this
 
 
-# 3. Based on measured fluxes v4 = 2, v5 = 10, and v6 = 0.5, calculate v1-v3.
+# 3. Based on measured fluxes v4 = 2.5, v5 = 2, and v6 = 10, calculate v1-v3.
 
 # Put you're intermediate steps here ...
-
 
 # Assign the final solution here (replace _ with your final step)
 # v_c needs to be a numpy.array containing the three calculated fluxes v1-v3
