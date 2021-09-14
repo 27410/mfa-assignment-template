@@ -2,7 +2,7 @@
 
 In `assignment.py`:
 
-1. Encode the network's[1] stoichiometry as a stoichiometry matrix.
+1. Encode the network's[1] stoichiometry as a stoichiometry matrix. Arrows encode flux direction. Please also check reaction formulas provided in `assignment.py`.
 2. Calculate the degrees of freedom using numpy.
 3. Calculate fluxes based on measured fluxes.
 
