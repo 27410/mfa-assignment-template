@@ -12,6 +12,13 @@ import numpy as np
 # 1. Write down the stoichiometry matrix S for the model as a numpy array.
 # The order of the rows should correspond to A, B and C.
 # The order of the columns should correspond to v1-v6
+# The reaction formulas are:
+# v1: 1 A -> 1 B
+# v2: 1 A -> 1 C
+# v3: 1 C ->
+# v4: 1 C ->
+# v5: 1 B ->
+# v6: 1 A -> 
 
 
 # replace [[]] with the stoichiometric matrix.
@@ -19,7 +26,7 @@ S = np.array([[]])
 
 ###### Don't touch
 def test_stoichiometry_matrix():
-    assert hashlib.md5(S).digest() == b'\xe2Q(\xd6\xf1\x8f.7F\xfbB(\xabY\xf8\xcc'
+    assert hashlib.md5(S.astype(int)).digest() == b'\x97V\x01\xe6\x14\x96\x05p\xda~?.\x9b\xc0.\x87'
 ###### this
 
 
