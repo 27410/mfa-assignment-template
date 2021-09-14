@@ -20,14 +20,8 @@ import numpy as np
 # v5: 1 B ->
 # v6: 1 A -> 
 
-
 # replace [[]] with the stoichiometric matrix.
 S = np.array([[]])
-
-###### Don't touch
-def test_stoichiometry_matrix():
-    assert hashlib.md5(S.astype(int)).digest() == b'\x97V\x01\xe6\x14\x96\x05p\xda~?.\x9b\xc0.\x87'
-###### this
 
 
 # 2. Calculate how many fluxes need to be measured (degrees of freedom).
@@ -36,11 +30,6 @@ def test_stoichiometry_matrix():
 # cannot be just a number; should be a computation based on S)
 
 degrees_of_freedom = _
-
-###### Don't touch
-def test_degrees_of_freedom():
-    assert degrees_of_freedom == 3
-###### this
 
 
 # 3. Based on measured fluxes v4 = 2.5, v5 = 2, and v6 = 10, calculate v1-v3.
@@ -54,7 +43,15 @@ def test_degrees_of_freedom():
 
 v_c = _
 
+
+# Tests come in the end
 ###### Don't touch
+def test_stoichiometry_matrix():
+    assert hashlib.md5(S.astype(int)).digest() == b'\x97V\x01\xe6\x14\x96\x05p\xda~?.\x9b\xc0.\x87'
+
+def test_degrees_of_freedom():
+    assert degrees_of_freedom == 3
+
 def test_mfa_calculation():
     assert v_c.sum() == 15.5
 ###### this
