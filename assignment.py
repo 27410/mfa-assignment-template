@@ -32,7 +32,7 @@ S = np.array([[]])
 degrees_of_freedom = _
 
 
-# 3. Based on measured fluxes v4 = 2.5, v5 = 2, and v6 = 10, calculate v1-v3.
+# 3. Based on measured fluxes v4 = 2.5, v5 = 2, and v6 = -10, calculate v1-v3.
 
 # Put you're intermediate steps here ...
 
